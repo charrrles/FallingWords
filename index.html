@@ -1,5 +1,16 @@
 <meta charset="utf-8">
 <script src="./dictionnaireFrancais.js"></script>
+<script>
+  const CANVAS_HEIGHT = 500;
+  const CANVAS_WIDTH = 500;
+  const INITIAL_DELAY = 25;
+
+  window.onload = function(){
+  let context = document.getElementById('myCanvas').getContext('2d');
+  context.width = CANVAS_WIDTH;
+  context.height = CANVAS_HEIGHT;
+};
+</script>
 <script src="./gameControl.js"></script>
 
 <!DOCTYPE html>

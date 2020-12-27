@@ -1,8 +1,5 @@
 const dictionary = data.split(/\n/);
-const CANVAS_HEIGHT = 500;
-const CANVAS_WIDTH = 500;
 const INITIAL_Y = CANVAS_HEIGHT - 450;
-const INITIAL_DELAY = 25;
 var successes = 0;
 var currentWords = [];
 var delay = 25;
@@ -11,14 +8,8 @@ var textYPos;
 var currentWord;
 
 function randomX(){
-  return Math.random() * 300 + 100;
+  return Math.random() * (CANVAS_WIDTH - 200) + 50;
 }
-
-window.onload = function(){
-  let context = document.getElementById('myCanvas').getContext('2d');
-  context.width = CANVAS_WIDTH;
-  context.height = CANVAS_HEIGHT;
-};
 
 async function drawWord(){
   let context = document.getElementById('myCanvas').getContext('2d');
