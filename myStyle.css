@@ -1,0 +1,23 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+.alive {
+  padding: 25px;
+  background-color: cyan;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+.dead {
+  padding: 25px;
+  background-color: crimson;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
